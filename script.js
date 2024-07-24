@@ -5,5 +5,5 @@ fetch('https://example.com/data')
 
 
 document.getElementById("setRoom").addEventListener("click", ()=>{
-  window.location.href = window.location.href + document.getElementById("roomCodeInput")
+  window.location.href = window.location.href + toString(document.getElementById("roomCodeInput"))
 })
