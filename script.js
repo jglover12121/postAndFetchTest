@@ -1,16 +1,13 @@
-fetch('https://example.com/data') 
-  .then(response => response.json()) 
-  .then(data => console.log(data)) 
-  .catch(error => console.error(error)); 
+const roomCodeInput = document.getElementById("roomCodeInput")
 
 const oriHref = window.location.href;
 
 console.log(oriHref);
-const roomCode = 0;
+let roomCode = toString(roomCodeInput.value);
 
 document.getElementById("setRoom").addEventListener("click", ()=>{
-  roomCode = toString(document.getElementById("roomCodeInput"))
-  window.location.href = oriHref + roomCode;
+  roomCode = toString(roomCodeInput.value);
+  window.location.href = toString(toString(oriHref) + roomCode);
 })
 document.getElementById("leaveRoom").addEventListener("click", ()=>{
   window.location.href = oriHref;
