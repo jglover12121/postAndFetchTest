@@ -10,7 +10,6 @@ document.getElementById("setRoom").addEventListener("click", ()=>{
   let newRoomHref = oriHref + roomCode;
   console.log(oriHref);
   console.log(newRoomHref);
-  window.location.href = newRoomHref;
 })
 document.getElementById("leaveRoom").addEventListener("click", ()=>{
   window.location.href = oriHref;
